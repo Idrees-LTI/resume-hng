@@ -1,0 +1,130 @@
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.first-section {
+    background-color: rgb(80, 94, 89);
+    color: #fff;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.first-section footer img {
+    display: none;
+}
+
+body h1 {
+    position: absolute;
+    text-align: center;
+    margin-top: -50px;
+}
+body .avatar {
+    width:  200px;
+    height:  200px;
+    margin: 20px 20% 0;
+    padding-bottom: 30px;
+}
+.objective h1 {
+    display: none;
+}
+
+.contact, .skills, .objective, .work-history, .education, .projects, .certifications, .hobbies, .reference {
+    border-top: 1px solid;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.contact img {
+    width: 20px;
+    margin-top: 10px;
+}
+.contact li {
+    list-style-type: none;
+}
+.projects li a {
+    color: rgb(80, 94, 89);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.second-section h3, .second-section h4 {
+    color: rgb(80, 94, 89);
+}
+.second-section h3:hover, .second-section h4:hover {
+    color: #000;
+}
+
+@media(min-width: 768px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first-section footer img {
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+    .second-section footer img {
+        display: none;
+    }
+    body h1 {
+        display: none;
+    }
+    body .avatar {
+        width:  200px;
+        height:  200px;
+    }
+    .contact {
+        margin-top: -700px;
+    }
+    .education {
+        margin-top: -1100px;
+    }
+    .objective {
+        border-top: 3px solid;
+        margin-left: 50px;
+        margin-right: 50px;
+    
+    }
+    .first-section {
+        width: 40%;
+        margin-top: 0px;
+    }
+    body .avatar, .contact {
+        bottom: 500px;
+    }
+    .objective h1 {
+        display: block;
+    }
+    .second-section {
+        width: 60%;
+        margin-top: 50px;
+    }
+    
+}
+@media(min-width: 1024px) {
+    .first-section {
+        width: 40%;
+    }
+    body .avatar {
+        width:  250px;
+        height:  250px;
+    }
+    .contact {
+        margin-top: -550px;
+    }
+    .education {
+        margin-top: -850px;
+    }
+    .second-section {
+        width: 60%;
+    }
+}
+@media(min-width: 1440px) {
+    .contact {
+        margin-top: -500px;
+    }
+    .education {
+        margin-top: -750px;
+    }
+}
